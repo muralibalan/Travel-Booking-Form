@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .mandatory:after {
+            content: " *";
+            color: red;
+         }
+    </style>
+</head>
+<body>
+    <h1>Tour Booking Form</h1>
+    <h2 class="mandatory">Note : <sup>*</sup>Mandatory Fields</h2>
+    <hr>
+    <label for="" class="mandatory">Full Name:</label><br>
+    <input type="text" required>
+    <br><br>
+    <label for="" class="mandatory">Email Address:</label><br>
+    <input type="email" required><br><br>
+    <label for="" class="mandatory">Select Tour Packages:</label>
+    <br>
+    <select name="tour_packages" id="Packages" required>
+        <option value="sounth india">South India</option>
+        <option value="noth india">North India</option>
+        <option value="goa">Goa</option>
+        <option value="jamu">JAMU</option>
+    </select>
+    <br><br>
+    <label for="" class="mandatory">Arrival Date:</label><br>
+    <input type="date" required><br><br>
+    <label for="" class="mandatory">Number of Persons:</label><br>
+    <input type="text" required><br><br>
+    <label for=""class="mandatory">What would you want to avail?</label><br>  
+      <input type="checkbox" id="boarding" name="available" value="Boarding"/>  
+      <label for="boarding">Bording</label> <br>  
+      <input type="checkbox" id="Food" name="availabl" value="Food"/>  
+      <label for="Food">Food</label> <br>  
+      <input type="checkbox" id="Sight Seeing" name="availabl" value="Sight Seeing"/>  
+      <label for="sight seeing">Sight Seeing</label>  <br><br>
+
+      <label for="">Tearms and Conditions</label><br>
+      <input type="radio" name="Conditions" value="I agree" id="agreed">
+      <label for="agreed"> I Agree</label>
+      <input type="radio" name="Conditions" value="I disagree" id="disagreed">
+      <label for="agreed"> I DisAgree</label>
+</body>
+</html>
